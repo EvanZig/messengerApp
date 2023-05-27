@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import { Button } from 'antd';
+import './styles/general.scss'
 
 function App() {
   const [num,setNum] = useState(0);
@@ -13,9 +15,9 @@ function App() {
 
   return (
     <>
-    <h1>{num}</h1>
-    <button onClick={add}>add</button>
-    <button onClick={remove}>remove</button>
+    <h1>{num} daslp[kdasop kdasop'd kop'aks op'skao dkas pask opaskdo</h1>
+    <Button onClick={add} className='button'>add</Button>
+    <Button onClick={remove}>remove</Button>
     </>
   );
 }
