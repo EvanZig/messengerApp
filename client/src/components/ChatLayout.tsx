@@ -8,21 +8,19 @@ const { Header, Footer, Sider, Content } = Layout
 
 export default function ChatLayout() {
     return (
-        <div className="chatLayout">
+        <Layout className="chatLayout">
+            <Sider className="sideBarContainer">
+                <Sidebar />
+            </Sider>
             <Layout>
-                <Sider className="sideBarContainer">
-                    <Sidebar />
-                </Sider>
-                <Layout>
-                    <Header className="headerContainer">
-                        <SearchBar />
-                    </Header>
+                <Header className="headerContainer">
+                    <SearchBar />
+                </Header>
 
-                    <Content className="chatSectionContainer">
-                        <ChatSection />
-                    </Content>
-                </Layout>
+                <Content className="chatSectionContainer">
+                    <ChatSection />
+                </Content>
             </Layout>
-        </div>
+        </Layout>
     )
 }

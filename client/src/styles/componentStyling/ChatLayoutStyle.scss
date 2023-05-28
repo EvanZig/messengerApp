@@ -1,8 +1,9 @@
-$brown: #654321;
+$brown: #7a5d3c;
 
 // Chat Input Styling
 .chatInputBox {
-    max-width: 600px !important;
+    max-width: auto !important;
+    min-width: 300px;
     font-family: 'Quicksand', sans-serif;
     border-radius: 10px;
     outline: none;
@@ -32,13 +33,14 @@ $brown: #654321;
 
 // entire Chat Layout Styling
 .chatLayout {
-    display: flex;
+    border-radius: 1%;
+    overflow: hidden;
 }
 
 // sidebar
 .chatSidebar {
     border: 1px solid $brown;
-    background-color: lightblue;
+    background-color: $brown;
     width: 100%;
     height: 100%;
 }
@@ -52,8 +54,19 @@ $brown: #654321;
 }
 
 // Chat Section with between users
+
+.chatSectionContainer {
+    min-height: 750px;
+    display: flex;
+}
+
 .chatSection {
-    border: 1px solid $brown;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    width: 100%;
+}
+
+.chatContent {
+    flex-grow: 1;
 }
