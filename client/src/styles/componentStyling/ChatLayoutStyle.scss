@@ -1,24 +1,59 @@
-.chatInputBox{
-    max-width: 500px !important;
+$brown: #654321;
+
+// Chat Input Styling
+.chatInputBox {
+    max-width: 600px !important;
     font-family: 'Quicksand', sans-serif;
-    border-radius:10px;outline:none;
-    transition: box-shadow .3s ease;
+    border-radius: 10px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
 }
 
 .chatInputBox:focus,
-.chatInputBox:hover{box-shadow:0px 0px 13px 0px #654321}
+.chatInputBox:hover {
+    box-shadow: 0px 0px 13px 0px $brown;
+    border: none;
+}
 
 /* Style the scrollbar */
 .chatInputBox::-webkit-scrollbar {
     width: 9px;
-  }
-  
-  .chatInputBox::-webkit-scrollbar-thumb {
-    background-color: #654321;
+}
+
+.chatInputBox::-webkit-scrollbar-thumb {
+    background-color: $brown;
     border-radius: 4px;
-    cursor: pointer; 
-  }
-  
-  .chatInputBox::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-  }
+    cursor: pointer;
+}
+
+.chatInputBox::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+// entire Chat Layout Styling
+.chatLayout {
+    display: flex;
+}
+
+// sidebar
+.chatSidebar {
+    border: 1px solid $brown;
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+}
+
+// userSearchTopBar
+.userSearch {
+    border: 1px solid $brown;
+    background-color: wheat;
+    width: 100%;
+    height: 100%;
+}
+
+// Chat Section with between users
+.chatSection {
+    border: 1px solid $brown;
+    width: 100%;
+    height: 100%;
+}

@@ -9,7 +9,7 @@ export default function ChatInput() {
         <div>
             <TextArea
                 placeholder="Send message"
-                autoSize={{ minRows: 3, maxRows: 3 }}
+                autoSize={{ minRows: 1, maxRows: 3 }}
                 className="chatInputBox"
             ></TextArea>
         </div>
