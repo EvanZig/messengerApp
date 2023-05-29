@@ -3,10 +3,11 @@ $brown: #7a5d3c;
 // Chat Input Styling
 .chatInputBox {
     max-width: auto !important;
-    min-width: 300px;
+    min-width: 200px;
     font-family: 'Quicksand', sans-serif;
     border-radius: 10px;
     outline: none;
+    margin-bottom: 2.5px;
     transition: box-shadow 0.3s ease;
 }
 
@@ -33,7 +34,10 @@ $brown: #7a5d3c;
 
 // entire Chat Layout Styling
 .chatLayout {
-    border-radius: 1%;
+    background-color: black;
+    min-width: 600px;
+    height: 900px;
+    border-radius: 2%;
     overflow: hidden;
 }
 
@@ -56,7 +60,6 @@ $brown: #7a5d3c;
 // Chat Section with between users
 
 .chatSectionContainer {
-    min-height: 750px;
     display: flex;
 }
 

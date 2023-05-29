@@ -2,9 +2,9 @@ import React from 'react'
 import Sidebar from './ChatUi/Sidebar'
 import SearchBar from './ChatUi/SearchBar'
 import ChatSection from './ChatUi/ChatSection'
-import { Layout, Space } from 'antd'
+import { Layout } from 'antd'
 
-const { Header, Footer, Sider, Content } = Layout
+const { Header, Sider, Content } = Layout
 
 export default function ChatLayout() {
     return (
