@@ -32,11 +32,20 @@ $brown: #7a5d3c;
     background-color: lightgray;
 }
 
+.chatLayoutWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    width: calc(100vw - 50px);
+    margin-left: 40px;
+}
+
 // entire Chat Layout Styling
 .chatLayout {
     background-color: black;
-    min-width: 600px;
-    height: 900px;
+    max-width: 1500px;
+    height: 800px;
     border-radius: 2%;
     overflow: hidden;
 }
