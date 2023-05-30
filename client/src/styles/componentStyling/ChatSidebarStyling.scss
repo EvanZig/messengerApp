@@ -18,8 +18,8 @@ $brown: #7a5d3c;
 }
 
 .conversationsMenu {
-    overflow: scroll;
-    max-height: calc(100vh - 177px);
+    overflow: auto;
+    max-height: calc(100vh - 192px);
 }
 
 .chatSidebar:focus,
@@ -30,7 +30,11 @@ $brown: #7a5d3c;
 
 /* Style the scrollbar */
 .conversationsMenu::-webkit-scrollbar {
-    width: 9px;
+    width: 0px;
+}
+
+.conversationsMenu:hover::-webkit-scrollbar {
+    width: 7px;
 }
 
 .conversationsMenu::-webkit-scrollbar-thumb {
