@@ -12,6 +12,7 @@ import {
 } from '@ant-design/icons'
 import { Menu, Tabs } from 'antd'
 import type { TabsProps } from 'antd'
+import '../../styles/componentStyling/ChatSidebarStyling.scss'
 
 const items: MenuProps['items'] = [
     UserOutlined,
@@ -47,27 +48,28 @@ const items: MenuProps['items'] = [
 const tabs: TabsProps['items'] = [
     {
         key: '1',
-        label: `Tab 1`,
+        label: <div className="sidebarTabStyling">All Conversations</div>,
         children: (
             <Menu
                 theme="light"
                 mode="inline"
                 defaultSelectedKeys={['4']}
                 items={items}
-                style={{ overflow: 'auto', maxHeight: 'calc(100vh - 64px)' }}
+                className="conversationsMenu"
             />
         ),
     },
     {
         key: '2',
-        label: `Tab 2`,
+        label: <div className="sidebarTabStyling">Favorites</div>,
         children: `Content of Tab Pane 2`,
     },
 ]
 
+//
 export default function Sidebar() {
     return (
-        <div className="chatSidebar" style={{ overflow: 'hidden' }}>
+        <div className="chatSidebar">
             <Tabs
                 defaultActiveKey="1"
                 items={tabs}

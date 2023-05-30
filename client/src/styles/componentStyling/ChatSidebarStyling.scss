@@ -1,0 +1,44 @@
+$brown: #7a5d3c;
+
+.chatSidebar {
+    background-color: $brown;
+    min-width: 300px;
+    height: 100%;
+}
+
+.sidebarTabStyling {
+    min-width: 134px;
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+// style={{ overflow: 'hidden', width: '300px' }}
+.sideBarContainer {
+}
+
+.conversationsMenu {
+    overflow: scroll;
+    max-height: calc(100vh - 177px);
+}
+
+.chatSidebar:focus,
+.chatSidebar:hover {
+    box-shadow: 0px 0px 13px 0px $brown;
+    border: none;
+}
+
+/* Style the scrollbar */
+.conversationsMenu::-webkit-scrollbar {
+    width: 9px;
+}
+
+.conversationsMenu::-webkit-scrollbar-thumb {
+    background-color: $brown;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.conversationsMenu::-webkit-scrollbar-track {
+    background-color: lightgray;
+}

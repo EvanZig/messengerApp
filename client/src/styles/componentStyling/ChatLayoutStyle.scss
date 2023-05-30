@@ -47,29 +47,15 @@ $brown: #7a5d3c;
     max-width: 1500px;
     height: 800px;
     border-radius: 2%;
+    border: 2px solid black;
     overflow: hidden;
-}
-
-// sidebar
-.chatSidebar {
-    border: 1px solid $brown;
-    background-color: $brown;
-    width: 100%;
-    height: 100%;
-}
-
-// userSearchTopBar
-.userSearch {
-    border: 1px solid $brown;
-    background-color: wheat;
-    width: 100%;
-    height: 100%;
 }
 
 // Chat Section with between users
 
 .chatSectionContainer {
     display: flex;
+    margin-left: 100px;
 }
 
 .chatSection {
@@ -81,7 +67,4 @@ $brown: #7a5d3c;
 
 .chatContent {
     flex-grow: 1;
-}
-
-.sideBarContainer {
 }

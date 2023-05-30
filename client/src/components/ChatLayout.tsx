@@ -10,7 +10,7 @@ export default function ChatLayout() {
     return (
         <div className="chatLayoutWrapper">
             <Layout className="chatLayout">
-                <Sider className="sideBarContainer">
+                <Sider>
                     <Sidebar />
                 </Sider>
                 <Layout>
