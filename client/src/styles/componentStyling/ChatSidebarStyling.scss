@@ -13,7 +13,11 @@ $brown: #7a5d3c;
     font-family: 'Quicksand', sans-serif;
 }
 
-// style={{ overflow: 'hidden', width: '300px' }}
+.sidebarTabStyling:hover {
+    color: black;
+}
+
+// entire container
 .sideBarContainer {
 }
 
@@ -45,4 +49,8 @@ $brown: #7a5d3c;
 
 .conversationsMenu::-webkit-scrollbar-track {
     background-color: lightgray;
+}
+
+.conversationTabs .ant-tabs-ink-bar {
+    background-color: black;
 }
