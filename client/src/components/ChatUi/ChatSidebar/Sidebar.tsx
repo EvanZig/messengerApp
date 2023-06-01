@@ -12,36 +12,18 @@ import {
 } from '@ant-design/icons'
 import { Menu, Tabs } from 'antd'
 import '../../../styles/componentStyling/ChatSidebar/ChatSidebarStyling.scss'
+import SidebarUserCard from './SidebarUserCard'
 
 const items: MenuProps['items'] = [
     UserOutlined,
-    VideoCameraOutlined,
-    UploadOutlined,
-    BarChartOutlined,
     CloudOutlined,
-    AppstoreOutlined,
-    TeamOutlined,
     ShopOutlined,
-    UserOutlined,
-    VideoCameraOutlined,
-    UploadOutlined,
-    BarChartOutlined,
-    CloudOutlined,
-    AppstoreOutlined,
-    TeamOutlined,
-    ShopOutlined,
-    UserOutlined,
-    VideoCameraOutlined,
-    UploadOutlined,
-    BarChartOutlined,
-    CloudOutlined,
-    AppstoreOutlined,
-    TeamOutlined,
-    ShopOutlined,
+    SidebarUserCard,
 ].map((icon, index) => ({
     key: String(index + 1),
     icon: React.createElement(icon),
     label: `nav ${index + 1}`,
+    className: 'sidebarMenuItems',
 }))
 
 const tabs: TabsProps['items'] = [

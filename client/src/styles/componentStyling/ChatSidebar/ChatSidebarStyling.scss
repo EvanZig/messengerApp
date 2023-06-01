@@ -54,3 +54,19 @@ $brown: #7a5d3c;
 .conversationTabs .ant-tabs-ink-bar {
     background-color: black;
 }
+
+.sidebarMenuItems {
+    height: 70px !important;
+}
+
+.sidebarMenuItems:focus,
+.sidebarMenuItems:hover {
+    background-color: $brown !important;
+    color: white !important;
+}
+
+.ant-menu-item-selected {
+    background-color: $brown !important;
+    color: white !important;
+    // border: 1px solid black;
+}
