@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from './ChatUi/Sidebar'
+import Sidebar from './ChatUi/ChatSidebar/Sidebar'
 import SearchBar from './ChatUi/SearchBar'
 import ChatSection from './ChatUi/ChatSection'
 import { Layout } from 'antd'

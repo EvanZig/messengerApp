@@ -1,5 +1,5 @@
-import React from 'react'
-import type { MenuProps } from 'antd'
+import React, { useEffect } from 'react'
+import type { MenuProps, TabsProps } from 'antd'
 import {
     AppstoreOutlined,
     BarChartOutlined,
@@ -11,8 +11,7 @@ import {
     VideoCameraOutlined,
 } from '@ant-design/icons'
 import { Menu, Tabs } from 'antd'
-import type { TabsProps } from 'antd'
-import '../../styles/componentStyling/ChatSidebarStyling.scss'
+import '../../../styles/componentStyling/ChatSidebar/ChatSidebarStyling.scss'
 
 const items: MenuProps['items'] = [
     UserOutlined,
@@ -68,6 +67,11 @@ const tabs: TabsProps['items'] = [
 
 //
 export default function Sidebar() {
+    useEffect(() => {
+        console.log(
+            'use Conversations // default are gonna be 3 bots or 1 bot called bot evan'
+        )
+    }, [])
     return (
         <div className="chatSidebar">
             <Tabs
