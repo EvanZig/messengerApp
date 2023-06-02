@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from './ChatUi/ChatSidebar/Sidebar'
-import SearchBar from './ChatUi/SearchBar'
+import ChatTopBar from './ChatUi/ChatTopBar/ChatTopBar'
 import ChatSection from './ChatUi/ChatSection'
 import { Layout } from 'antd'
 
@@ -15,7 +15,7 @@ export default function ChatLayout() {
                 </Sider>
                 <Layout>
                     <Header className="headerContainer">
-                        <SearchBar />
+                        <ChatTopBar />
                     </Header>
 
                     <Content className="chatSectionContainer">

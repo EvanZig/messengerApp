@@ -1,8 +1,49 @@
 $brown: #7a5d3c;
 
-.userSearch {
-    border: 1px solid $brown;
+.chatTopBar {
     background-color: wheat;
     height: 100%;
-    margin-left: 100px;
+    width: 100%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.chatSearchBar {
+    max-width: 600px;
+    margin-left: 200px;
+}
+
+.ant-input-search-button {
+    &:hover {
+        background-color: $brown !important;
+        border-color: $brown !important;
+        color: white !important;
+        opacity: 0.8;
+    }
+    background-color: $brown;
+    border-color: $brown;
+    color: white;
+    font-size: 17px;
+}
+
+.ant-input-search {
+    border-color: black !important;
+    &:hover,
+    &:focus {
+        border-color: #000000;
+        outline-color: #000000;
+    }
+}
+
+.notifications {
+    margin-left: 300px;
+    background-color: #ca8136;
+    height: 35px;
+    width: 40px !important;
+
+    &:hover,
+    &:focus {
+        background-color: #ca8136 !important;
+    }
 }

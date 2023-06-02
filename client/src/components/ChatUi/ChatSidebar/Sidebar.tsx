@@ -1,15 +1,6 @@
 import React, { useEffect } from 'react'
 import type { MenuProps, TabsProps } from 'antd'
-import {
-    AppstoreOutlined,
-    BarChartOutlined,
-    CloudOutlined,
-    ShopOutlined,
-    TeamOutlined,
-    UploadOutlined,
-    UserOutlined,
-    VideoCameraOutlined,
-} from '@ant-design/icons'
+import { CloudOutlined, ShopOutlined, UserOutlined } from '@ant-design/icons'
 import { Menu, Tabs } from 'antd'
 import '../../../styles/componentStyling/ChatSidebar/ChatSidebarStyling.scss'
 import SidebarUserCard from './SidebarUserCard'
