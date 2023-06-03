@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../../../styles/componentStyling/TopBarStyling.scss'
 import { Button, Input } from 'antd'
-import { BellOutlined, BellFilled } from '@ant-design/icons'
+import { BellOutlined, BellFilled, UserOutlined } from '@ant-design/icons'
 
 const { Search } = Input
 // figure out what onSearch attribute does
@@ -20,7 +20,7 @@ export default function ChatTopBar() {
                 placeholder="Search for people"
                 onSearch={onSearch}
                 enterButton
-                className="chatSearchBar"
+                className="chatSearchBar searchFont"
             />
             <Button
                 type="primary"
@@ -34,6 +34,12 @@ export default function ChatTopBar() {
                     )
                 }
                 className="notifications"
+                shape="circle"
+            ></Button>
+            <Button
+                type="primary"
+                icon={<UserOutlined style={{ fontSize: '24px' }} />}
+                className="userProfileTopbar"
                 shape="circle"
             ></Button>
         </div>

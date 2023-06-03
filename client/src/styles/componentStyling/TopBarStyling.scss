@@ -1,7 +1,7 @@
 $brown: #7a5d3c;
 
 .chatTopBar {
-    background-color: wheat;
+    background-color: #d2b48c;
     height: 100%;
     width: 100%;
     margin-left: 50px;
@@ -11,7 +11,17 @@ $brown: #7a5d3c;
 
 .chatSearchBar {
     max-width: 600px;
-    margin-left: 200px;
+    margin-left: 100px;
+}
+
+.searchFont .ant-input {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    &:focus,
+    &:hover {
+        box-shadow: 0px 0px 13px 0px $brown;
+        border: $brown;
+    }
 }
 
 .ant-input-search-button {
@@ -45,5 +55,18 @@ $brown: #7a5d3c;
     &:hover,
     &:focus {
         background-color: #ca8136 !important;
+    }
+}
+
+.userProfileTopbar {
+    margin-left: 20px;
+    height: 37px;
+    width: 40px !important;
+    background-color: #cccccc;
+
+    &:hover,
+    &:focus {
+        background-color: $brown !important;
+        font-size: 19px !important;
     }
 }
