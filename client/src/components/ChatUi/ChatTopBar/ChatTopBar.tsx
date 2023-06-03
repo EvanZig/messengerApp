@@ -4,6 +4,17 @@ import { Button, Input } from 'antd'
 import { BellOutlined, BellFilled, UserOutlined } from '@ant-design/icons'
 
 const { Search } = Input
+
+interface Props {
+    src: string
+    alt: string
+}
+
+const appLogo: Props = {
+    src: require('../../../images/blackAppLogo.png'),
+    alt: 'messengerAppLogo',
+}
+
 // figure out what onSearch attribute does
 const onSearch = (value: string) => console.log(value)
 
@@ -16,6 +27,12 @@ export default function ChatTopBar() {
 
     return (
         <div className="chatTopBar">
+            <img
+                src={appLogo.src}
+                alt={appLogo.alt}
+                width={200}
+                style={{ borderRadius: '12px' }}
+            />
             <Search
                 placeholder="Search for people"
                 onSearch={onSearch}
