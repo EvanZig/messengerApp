@@ -5,6 +5,7 @@ import { BellOutlined, BellFilled, UserOutlined } from '@ant-design/icons'
 
 const { Search } = Input
 
+// maybe make this another component with props to pass src so i can reuse it in the future maybe for practice maybe maybe.
 interface Props {
     src: string
     alt: string
