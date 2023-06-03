@@ -3,7 +3,7 @@ $brown: #7a5d3c;
 .chatSidebar {
     background-color: $brown;
     min-width: 300px;
-    height: 100%;
+    height: calc(100% + 10px);
 }
 
 .sidebarTabStyling {

@@ -13,7 +13,7 @@ export default function ChatLayout() {
                 <Sider>
                     <Sidebar />
                 </Sider>
-                <Layout>
+                <Layout style={{ backgroundColor: 'black' }}>
                     <Header className="headerContainer">
                         <ChatTopBar />
                     </Header>
