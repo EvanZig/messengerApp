@@ -12,7 +12,6 @@ $brown: #7a5d3c;
 }
 
 .formInput {
-    margin-top: 20px;
     @include chat-input-styles;
 }
 
@@ -31,6 +30,11 @@ $brown: #7a5d3c;
     }
 }
 
+.ant-btn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
 .ant-btn-default {
     &:hover,
     &:focus {
@@ -43,4 +47,23 @@ $brown: #7a5d3c;
     border-radius: 12px;
     border-color: $brown;
     border: 1px solid $brown;
+}
+
+.formItem {
+    margin-top: 20px;
+}
+
+.ant-input {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.ant-modal-title {
+    font-weight: bold !important;
+    font-size: 20px !important;
+    text-align: center;
+}
+
+.modalFooter {
+    display: flex;
+    justify-content: flex-end;
 }
