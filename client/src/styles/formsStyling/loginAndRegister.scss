@@ -68,5 +68,16 @@ $brown: #7a5d3c;
 .modalFooter {
     display: flex;
     justify-content: flex-end;
-    margin-top: -20px;
+    margin-top: 20px;
+    max-width: 500px;
+    .ant-btn-primary {
+        margin-left: 30px;
+    }
+}
+
+.ant-form-item-explain-success {
+    font-family: 'Quicksand', sans-serif;
+    color: red;
+    max-width: 340px;
+    margin-bottom: 10px;
 }
