@@ -106,7 +106,7 @@ const RegisterModal: React.FC = () => {
                         help={registerForm.errors.password}
                     >
                         <Input.Password
-                            placeholder="Input Password"
+                            placeholder="Password"
                             name="password"
                             iconRender={(visible) =>
                                 visible ? (
