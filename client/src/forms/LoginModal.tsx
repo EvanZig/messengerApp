@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Button, Modal, Input, Form } from 'antd'
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons'
 
+import '../styles/formsStyling/loginAndRegister.scss'
+
 const LoginModal: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -15,7 +17,7 @@ const LoginModal: React.FC = () => {
     return (
         <>
             <Button type="primary" onClick={showModal}>
-                Open Modal
+                Open Login Modal
             </Button>
             <Form
                 labelCol={{ flex: '80px' }}
@@ -61,7 +63,7 @@ const LoginModal: React.FC = () => {
                     <div className="modalFooter">
                         <Form.Item label=" " colon={false}>
                             <Button type="default" onClick={handleCancel}>
-                                Cancel
+                                CANCEL
                             </Button>
                         </Form.Item>
                         <Form.Item label=" " colon={false}>

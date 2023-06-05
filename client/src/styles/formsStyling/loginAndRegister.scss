@@ -59,8 +59,10 @@ $brown: #7a5d3c;
 
 .ant-modal-title {
     font-weight: bold !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
     text-align: center;
+    color: $brown !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .modalFooter {
