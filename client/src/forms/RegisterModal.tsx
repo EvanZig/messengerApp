@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { Button, Modal, Input, Form } from 'antd'
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons'
+import { mySchema, passwordErrors } from './formSchema'
+import { useFormik, FormikValues, FormikHelpers } from 'formik'
+// import axios from 'axios'
 
 import '../styles/formsStyling/loginAndRegister.scss'
 
@@ -15,6 +18,32 @@ const RegisterModal: React.FC = () => {
         setIsModalOpen(false)
     }
 
+    type FormValues = {
+        username: string
+        email: string
+        password: string
+        confirmPassword: string
+    }
+
+    const onSubmit = (
+        values: FormValues,
+        actions: FormikHelpers<FormValues>
+    ) => {
+        console.log('submitted')
+        actions.resetForm()
+    }
+
+    const registerForm = useFormik({
+        initialValues: {
+            username: '',
+            email: '',
+            password: '',
+            confirmPassword: '',
+        },
+        validationSchema: mySchema,
+        onSubmit,
+    })
+
     return (
         <>
             <Button type="primary" onClick={showModal}>
@@ -25,6 +54,7 @@ const RegisterModal: React.FC = () => {
                 labelAlign="left"
                 labelWrap
                 style={{ maxWidth: 600 }}
+                onSubmitCapture={registerForm.handleSubmit}
             >
                 <Modal
                     title="REGISTER"
