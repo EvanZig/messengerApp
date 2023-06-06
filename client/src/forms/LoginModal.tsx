@@ -49,7 +49,7 @@ const LoginModal: React.FC = () => {
                         className="formItem"
                     >
                         <Input.Password
-                            placeholder="Input Password"
+                            placeholder="Password"
                             iconRender={(visible) =>
                                 visible ? (
                                     <EyeTwoTone />
@@ -60,17 +60,17 @@ const LoginModal: React.FC = () => {
                             className="formInput"
                         />
                     </Form.Item>
-                    <div className="modalFooter">
-                        <Form.Item label=" " colon={false}>
-                            <Button type="default" onClick={handleCancel}>
-                                CANCEL
-                            </Button>
-                        </Form.Item>
-                        <Form.Item label=" " colon={false}>
-                            <Button type="primary" htmlType="submit">
-                                LOGIN
-                            </Button>
-                        </Form.Item>
+                    <div className="modalFooter" style={{ marginTop: '50px' }}>
+                        <Button
+                            type="default"
+                            onClick={handleCancel}
+                            style={{ marginRight: '-10px' }}
+                        >
+                            CANCEL
+                        </Button>
+                        <Button type="primary" htmlType="submit">
+                            LOGIN
+                        </Button>
                     </div>
                 </Modal>
             </Form>
