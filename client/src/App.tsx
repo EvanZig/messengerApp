@@ -10,9 +10,9 @@ function App() {
     return (
         <>
             <Topbar />
-            {/* <ChatLayout /> */}
-            <LoginModal />
-            <RegisterModal />
+            <ChatLayout />
+            {/* <LoginModal />
+            <RegisterModal /> */}
             <Footer />
         </>
     )

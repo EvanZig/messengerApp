@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Avatar, Badge } from 'antd'
 import { UserOutlined } from '@ant-design/icons'
+import '../../../styles/componentStyling/ChatSidebar/SideBarUserCard.scss'
 
 export default function SidebarUserCard() {
     const [userOnline, setUserOnline] = useState(false)
@@ -10,7 +11,7 @@ export default function SidebarUserCard() {
         marginLeft: '-20px',
     }
     return (
-        <div>
+        <div style={{ display: 'flex' }}>
             <Badge dot style={dotColor}>
                 <Avatar
                     size={45}
@@ -18,7 +19,10 @@ export default function SidebarUserCard() {
                     style={{ marginLeft: '-20px' }}
                 />
             </Badge>
-            <div>Content of nav 4</div>
+            <div className="userCardWrapper">
+                <div className="userCardUsername"> Username </div>
+                <div className="lastMessageSent"> Last message sent </div>
+            </div>
         </div>
     )
 }

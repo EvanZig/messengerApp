@@ -13,7 +13,6 @@ const items: MenuProps['items'] = [
 ].map((icon, index) => ({
     key: String(index + 1),
     icon: React.createElement(icon),
-    label: `nav ${index + 1}`,
     className: 'sidebarMenuItems',
 }))
 
