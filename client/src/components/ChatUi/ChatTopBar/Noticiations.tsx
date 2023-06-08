@@ -57,11 +57,6 @@ export default function Noticiations() {
     const handleHover = (hoverState: boolean) => {
         setIsHovered(hoverState)
     }
-    const icon = isHovered ? (
-        <BellFilled style={{ fontSize: '24px' }} />
-    ) : (
-        <BellOutlined style={{ fontSize: '24px' }} />
-    )
     return (
         <div>
             <Dropdown menu={{ items }} placement="bottomRight">
