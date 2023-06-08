@@ -70,3 +70,11 @@ $brown: #7a5d3c;
         font-size: 19px !important;
     }
 }
+
+.ant-dropdown-menu-item {
+    &:hover {
+        background-color: $brown !important;
+        color: white !important;
+    }
+    height: 50px;
+}

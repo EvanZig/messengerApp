@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import '../../../styles/componentStyling/TopBarStyling.scss'
-import { Button, Input } from 'antd'
+import { Input } from 'antd'
 import { UserOutlined } from '@ant-design/icons'
 import Notifications from './Noticiations'
+import TopBarProfile from './TopBarProfile'
 
 const { Search } = Input
 
@@ -21,12 +22,6 @@ const appLogo: Props = {
 const onSearch = (value: string) => console.log(value)
 
 export default function ChatTopBar() {
-    const [isHovered, setIsHovered] = useState(false)
-
-    const handleHover = (hoverState: boolean) => {
-        setIsHovered(hoverState)
-    }
-
     return (
         <div className="chatTopBar">
             <img
@@ -41,13 +36,8 @@ export default function ChatTopBar() {
                 enterButton
                 className="chatSearchBar searchFont"
             />
-            <Notifications></Notifications>
-            <Button
-                type="primary"
-                icon={<UserOutlined style={{ fontSize: '24px' }} />}
-                className="userProfileTopbar"
-                shape="circle"
-            ></Button>
+            <Notifications />
+            <TopBarProfile />
         </div>
     )
 }
