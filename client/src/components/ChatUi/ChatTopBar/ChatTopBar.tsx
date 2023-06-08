@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import '../../../styles/componentStyling/TopBarStyling.scss'
 import { Button, Input } from 'antd'
-import { BellOutlined, BellFilled, UserOutlined } from '@ant-design/icons'
+import { UserOutlined } from '@ant-design/icons'
+import Notifications from './Noticiations'
 
 const { Search } = Input
 
@@ -40,20 +41,7 @@ export default function ChatTopBar() {
                 enterButton
                 className="chatSearchBar searchFont"
             />
-            <Button
-                type="primary"
-                onMouseEnter={() => handleHover(true)}
-                onMouseLeave={() => handleHover(false)}
-                icon={
-                    isHovered ? (
-                        <BellFilled style={{ fontSize: '24px' }} />
-                    ) : (
-                        <BellOutlined style={{ fontSize: '24px' }} />
-                    )
-                }
-                className="notifications"
-                shape="circle"
-            ></Button>
+            <Notifications></Notifications>
             <Button
                 type="primary"
                 icon={<UserOutlined style={{ fontSize: '24px' }} />}
