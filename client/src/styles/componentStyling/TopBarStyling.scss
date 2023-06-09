@@ -4,7 +4,7 @@ $brown: #7a5d3c;
     background-color: #d2b48c;
     height: 100%;
     width: 100%;
-    margin-left: 50px;
+    margin-left: 120px;
     display: flex;
     align-items: center;
 }
@@ -39,6 +39,7 @@ $brown: #7a5d3c;
 
 .ant-input-search {
     border-color: black !important;
+    max-width: 700px !important;
     &:hover,
     &:focus {
         border-color: #000000;
@@ -47,7 +48,7 @@ $brown: #7a5d3c;
 }
 
 .notifications {
-    margin-left: 170px;
+    margin-left: 380px;
     background-color: #ca8136;
     height: 37px;
     width: 40px !important;

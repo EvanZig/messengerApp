@@ -36,17 +36,18 @@ $brown: #7a5d3c;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 50px);
-    width: calc(100vw - 300px);
-    margin-left: 220px;
-    margin-top: -20px;
+    height: calc(100vh - 16px);
+    width: calc(100vw - 10px);
+}
+
+.ant-layout {
+    height: 100vh !important;
+    width: 100vw !important;
 }
 
 // entire Chat Layout Styling
 .chatLayout {
     background-color: black;
-    max-width: 1500px;
-    height: 800px;
     border-radius: 12px;
     border: 1px solid black;
     overflow: hidden;
@@ -56,7 +57,7 @@ $brown: #7a5d3c;
 
 .chatSectionContainer {
     display: flex;
-    margin-left: 100px;
+    margin-left: 170px;
 }
 
 .chatSection {
