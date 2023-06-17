@@ -1,4 +1,17 @@
 $brown: #7a5d3c;
+@mixin borderShadow {
+    &:focus,
+    &:hover {
+        box-shadow: 0px 0px 13px 0px $brown;
+        border: none;
+    }
+}
+
+.chatInputWrapper {
+    display: flex;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
 
 // Chat Input Styling
 .chatInputBox {
@@ -7,14 +20,9 @@ $brown: #7a5d3c;
     font-family: 'Quicksand', sans-serif;
     border-radius: 10px;
     outline: none;
-    margin-bottom: 1px;
-    transition: box-shadow 0.3s ease;
-}
-
-.chatInputBox:focus,
-.chatInputBox:hover {
-    box-shadow: 0px 0px 13px 0px $brown;
-    border: none;
+    @include borderShadow();
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 /* Style the scrollbar */
@@ -70,4 +78,34 @@ $brown: #7a5d3c;
 
 .chatContent {
     flex-grow: 1;
+}
+
+.chatInputButton {
+    border: none;
+    border-top: 1px solid $brown;
+    border-bottom: 1px solid $brown;
+    border-radius: 0px;
+    &:hover {
+        color: black !important;
+        box-shadow: 0px 0px 13px 0px $brown;
+        border: none;
+    }
+}
+
+.sendButton {
+    border-radius: 10px;
+    border: 1px solid $brown;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+}
+.emojiButton {
+    margin-left: 1px;
+}
+
+.emojiPicker {
+    position: absolute;
+    top: 73%;
+    left: 90%;
+    transform: translate(-50%, -50%);
 }
