@@ -23,6 +23,10 @@ $brown: #7a5d3c;
     @include borderShadow();
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    border-top: 1px solid $brown;
+    border-right: none;
+    margin-right: -1px;
+    border-bottom: 1px solid $brown;
 }
 
 /* Style the scrollbar */
